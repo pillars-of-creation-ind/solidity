@@ -10,7 +10,7 @@ contract coin {
   event Sent(address from, address to, uint amount);
 
   //Constructor whose code is run only when the contract is created
-  function Coin() public {
+  constructor() {
     minter = msg.sender;
   }
 
